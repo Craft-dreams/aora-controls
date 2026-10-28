@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+.brief/
+*.egg-info/
+build/
+dist/
+.aora/baseline.json.tmp
