@@ -1,0 +1,14 @@
+id: ARCH-LAYERS-001-py-ast
+norm: ARCH-LAYERS-001
+norm_hash: pending
+status: active
+kind: deterministic
+languages: [python]
+tool: python-ast
+params:
+  domain: {default: app/domain, description: pacote da camada de domínio}
+  infra: {default: app/infrastructure, description: pacote da camada de infraestrutura}
+command: "python3 {control_dir}/check.py --domain {params.domain} --infra {params.infra}"
+default_mode: ratchet
+owner: craft-dreams-engineering
+tests: {pass: tests/pass, fail: tests/fail}
