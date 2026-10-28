@@ -1,0 +1,14 @@
+id: SEC-SECRETS-001-py-regex-ast
+norm: SEC-SECRETS-001
+norm_hash: pending
+status: active
+kind: deterministic
+languages: [python]
+tool: python-ast-regex
+params:
+  paths: {default: ".", description: "caminhos a verificar"}
+  exclude: {default: "tests,fixtures,.git", description: "padrões de exclusão separados por vírgula"}
+command: "python3 {control_dir}/check.py --paths {params.paths} --exclude {params.exclude}"
+default_mode: block
+owner: craft-dreams-engineering
+tests: {pass: tests/pass, fail: tests/fail}
