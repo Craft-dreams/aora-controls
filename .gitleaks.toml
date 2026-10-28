@@ -1,0 +1,12 @@
+# gitleaks: default rules, plus an allowlist for the deliberately fake secrets used as failing fixtures of the
+# SEC-SECRETS-001 control. Those strings are synthetic (e.g. sk-FAKE...); real-looking values are still refused.
+[extend]
+useDefault = true
+
+[allowlist]
+paths = [
+  '''controls/[^/]+/[^/]+/tests/fail/.*''',
+]
+regexes = [
+  '''FAKE''',
+]
