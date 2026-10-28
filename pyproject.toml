@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aora-controls"
+version = "0.1.0"
+description = "Reusable controls and runner enforcing Knowledge Hub norms"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+aora-controls = "aora_controls.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
