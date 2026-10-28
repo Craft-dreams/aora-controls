@@ -1,0 +1,13 @@
+id: CONFIG-ENV-001-py-ast
+norm: CONFIG-ENV-001
+norm_hash: pending
+status: active
+kind: deterministic
+languages: [python]
+tool: python-ast
+params:
+  packages: {default: "app/domain,app/application", description: "pacotes onde o acesso direto a env é proibido"}
+command: "python3 {control_dir}/check.py --packages {params.packages}"
+default_mode: ratchet
+owner: craft-dreams-engineering
+tests: {pass: tests/pass, fail: tests/fail}
