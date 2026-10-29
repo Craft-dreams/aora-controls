@@ -1,6 +1,6 @@
 id: SEC-SECRETS-001-py-regex-ast
 norm: SEC-SECRETS-001
-norm_hash: "a9ee49f7669a653c10e289b24ccf10c50c1c39e00b93dad0c677b71ea12e0e85"
+norm_hash: "f9e2bd0790551100cd33e483fcd9eabf53aad2c86987db09111b837aa4939df5"
 status: active
 kind: deterministic
 languages: [python]
