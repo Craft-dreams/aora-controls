@@ -1,6 +1,6 @@
 id: ARCH-LAYERS-001-py-ast
 norm: ARCH-LAYERS-001
-norm_hash: "ae214d5d5e3cdf54e1e928f43e41cfb56f887415be148ff5c8fe773455b9ae66"
+norm_hash: "c3865291616e7abf3ce883f31f1e1e9f93e604b93349c9bd245c3b9b102f52c6"
 status: active
 kind: deterministic
 languages: [python]
